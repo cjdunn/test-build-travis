@@ -1,0 +1,23 @@
+sudo: true
+language: python
+
+env:
+  - SHELL_PATH=build.sh
+
+before_script: 
+  - sudo apt-get install -y shellcheck
+
+script: 
+  - "shellcheck $SHELL_PATH"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+
+
+notifications:
+  email: false
