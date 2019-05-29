@@ -116,19 +116,19 @@ echo " "
 #         exit 1
 # fi
 
-if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o otf --no-production-names
+if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o otf --no-production-names --output-dir './fonts/Test_otf'
     then
         echo "Unable to build from designspace.  Build canceled." 1>&2
         exit 1
 fi
 
-if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o ttf --no-production-names
+if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o ttf --no-production-names --output-dir './fonts/Test_ttf'
     then
         echo "Unable to build from designspace.  Build canceled." 1>&2
         exit 1
 fi
 
-if ! fontmake -m "source/designspace/test.designspace" -o variable --no-production-names
+if ! fontmake -m "source/designspace/test.designspace" -o variable --no-production-names --output-dir './fonts/Test_vf'
     then
         echo "Unable to build from designspace.  Build canceled." 1>&2
         exit 1
