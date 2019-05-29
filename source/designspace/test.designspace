@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="wght" minimum="0" maximum="1000" default="400">
+      <labelname xml:lang="en">wght</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="../1-Drawing/Test-Reglar.ufo" familyname="Test" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="wght" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="../1-Drawing/Test-Bold.ufo" familyname="Test" stylename="Bold">
+      <location>
+        <dimension name="wght" xvalue="800"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Test" stylename="Semi Bold" filename="instances/Test-Semi_Bold.ufo">
+      <location>
+        <dimension name="wght" xvalue="600"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Test" stylename="Regular" filename="instances/Test-Regular.ufo">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Test" stylename="Bold" filename="instances/Test-Bold.ufo">
+      <location>
+        <dimension name="wght" xvalue="800"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+</designspace>
