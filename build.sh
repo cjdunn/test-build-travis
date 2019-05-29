@@ -122,6 +122,11 @@ if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o otf -
         exit 1
 fi
 
+if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o ttf --no-production-names
+    then
+        echo "Unable to build from designspace.  Build canceled." 1>&2
+        exit 1
+fi
 
 if ! fontmake -m "source/designspace/test.designspace" -o variable --no-production-names
     then
