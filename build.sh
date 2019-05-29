@@ -109,7 +109,14 @@ if ! fontmake -u "source/1-Drawing/Test-Reglar.ufo" -o ttf
 	    exit 1
 fi
 
+
 if ! fontmake -u "source/1-Drawing/Test-Bold.ufo" -o ttf
+    then
+        echo "Unable to build the Hack-Regular variant set.  Build canceled." 1>&2
+        exit 1
+fi
+
+if ! fontmake -m "source/designspace/test.designspace" -i --interpolate -o otf --no-production-names
     then
         echo "Unable to build the Hack-Regular variant set.  Build canceled." 1>&2
         exit 1
