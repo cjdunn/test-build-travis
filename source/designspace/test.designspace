@@ -5,6 +5,14 @@
       <labelname xml:lang="en">wght</labelname>
     </axis>
   </axes>
+  <rules>
+    <rule name="dollar">
+      <conditionset>
+        <condition name="wght" minimum="600" />
+      </conditionset>
+      <sub name="dollar" with="dollar.alt"/>
+    </rule>
+  </rules>
   <sources>
     <source filename="../1-Drawing/Test-Reglar.ufo" familyname="Test" stylename="Regular">
       <lib copy="1"/>
