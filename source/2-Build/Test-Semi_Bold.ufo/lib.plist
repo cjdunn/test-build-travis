@@ -124,6 +124,7 @@
       <string>bar</string>
       <string>dollar</string>
       <string>space</string>
+      <string>dollar.alt</string>
     </array>
   </dict>
 </plist>
