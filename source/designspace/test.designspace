@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="wght" minimum="0" maximum="1000" default="400">
+    <axis tag="wght" name="wght" minimum="400" maximum="800" default="400">
       <labelname xml:lang="en">wght</labelname>
     </axis>
   </axes>
