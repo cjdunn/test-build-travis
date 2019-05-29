@@ -2,7 +2,6 @@ sudo: true
 language: python
 
 env:
-  - VARIANT=source/1-Drawing/Test-Reglar.ufo
   - SHELL_PATH=build.sh
 
 before_script: 
